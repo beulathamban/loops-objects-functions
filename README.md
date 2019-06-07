@@ -1,2 +1,2 @@
-# loops-objects-functions
-with modal
+# loop-objects-functions
+loop-objects-functions

@@ -1,0 +1,350 @@
+/*
+
+=====================
+CSS Reset
+=====================
+
+*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
+
+body{
+	background: teal;
+}
+
+
+/*
+
+=====================
+Page Heading
+=====================
+
+*/
+
+
+#page-heading{
+	text-align: center;
+	color: white;
+}
+
+h2{
+	color:white;
+	margin-left:30px;
+}
+
+h3{
+	margin: 10px 0px 10px 30px;
+}
+
+
+/*
+
+=====================
+Three Buttons
+=====================
+
+*/
+
+
+/* buttons div */
+#btn{
+	width:90%;
+	margin:auto;
+	/*background: pink;*/
+	height: 100px;
+	
+}
+
+/* button container div */
+.btn-container{
+	width: 33.3%;
+	height: 100px;
+	float:left;
+	margin:auto;
+
+}
+.btn-container::after{
+	clear:left;
+}
+
+
+/* button */
+.btn-place{
+	background: white;
+	color:teal;
+	width:200px;
+	height:50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	margin:20px auto;
+	display:block;
+	
+}
+
+
+
+/*
+
+=====================
+List of Images
+=====================
+
+*/
+
+
+/* images div */
+#images {
+	width:90%;
+	margin:auto;
+	background: white;
+}
+
+
+
+/* image container div*/
+.image-div {
+	width:33.3%;
+	height:400px;
+	padding:3px;
+	float:left;
+	border: 2px solid red;
+}
+
+
+/* image */
+.hotel-image{
+	width:90%;
+	height:80%;
+	margin:auto;
+	display:block;
+}
+.image-div::after{
+	clear:left;
+}
+
+
+/*
+
+=====================
+Modal
+=====================
+
+*/
+
+
+#modal0{
+	display:none;
+	z-index: 1; /* Sit on top */ 
+	background: black;
+	color: teal;
+	width:80%;
+	height:600px;
+	margin:auto;
+
+}
+
+#close-bar{
+	background: white;
+	color:black;
+	width:100%;
+	height:49px;
+}
+
+
+.close{
+	
+	font-size: 30px;
+	text-align: center;
+	width:50px;
+	height:50px;
+	background: white;
+	position: relative;
+	top:0;
+	left:0;
+	
+}
+
+.modal-body{
+	width : 100%;
+	height: 100%;
+}
+
+.modal-left{
+	width: 50%;
+	height: 100%;
+	float:left;
+}
+
+.modal-right{
+	width : 50%;
+	height: 100%;
+	float:left;
+
+}
+
+.modal-body::after{
+	clear:left;
+}
+
+.modal-image{
+	width: 100%;
+	height: 538.5px;
+}
+
+#hotel0-name{
+font-size: 40px;
+}
+
+
+#hotel0-price{
+font-size: 30px;
+
+
+}
+
+.details{
+	font-size: 25px;
+	padding: 20px;
+}
+
+
+
+/* ipad */
+
+@media only screen and (max-width: 786px){ 
+
+		#images, #btn{
+			width: 100%;
+		}
+
+
+
+		#btn{
+			
+			margin:auto;	
+			height: 50px;
+
+		}
+
+		.btn-container{
+
+			height: 50px;
+				
+
+		}
+
+		.btn-place {
+
+			width:100px;
+			height:35px;	
+			font-size: 17px;
+			margin: 5px auto;		
+		}
+
+		.image-div {
+
+			width:50%;
+			height:350px;
+			padding:2px;
+			float:left;
+			border: 2px solid red;
+		}
+
+		.image-div::after{	
+			clear:left;
+		}
+
+		.modal-body{
+			width : 100%;
+			height: 100%;
+		}
+		.modal-left{
+			width: 100%;
+			height: 100%;
+			
+		}
+		.modal-right{
+			display: none;
+
+		}
+		.modal-image{
+			display:none;
+		}
+
+
+
+		#hotel0-name{
+		font-size: 30px;
+		}
+
+
+		#hotel0-price{
+		font-size: 20px;
+
+
+		}
+		.details{
+			font-size: 20px;
+			padding: 20px;
+		}
+
+
+	}
+
+/* mobile */
+
+@media only screen and (max-width: 586px){ 
+
+		.btn-place {			
+			font-size: 15px;	
+		}
+
+		.image-div {
+			width:100%;
+			height:400px;
+			padding:2px 3px;
+			
+		}
+		.modal-body{
+			width : 100%;
+			height: 100%;
+		}
+		.modal-left{
+			width: 100%;
+			height: 100%;
+			
+		}
+		.modal-right{
+			display: none;
+
+		}
+		.modal-image{
+			display:none;
+		}
+
+
+
+		#hotel0-name{
+		font-size: 30px;
+		}
+
+
+		#hotel0-price{
+		font-size: 20px;
+
+
+		}
+		.details{
+			font-size: 20px;
+			padding: 20px;
+		}
+
+
+	}
